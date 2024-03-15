@@ -11,6 +11,10 @@ int factorial(int n){
 }
 
 int main(){
+    cout<<"********************************************************"<<endl;
+    cout<<"Factorial Calculator"<<endl;
+    cout<<"********************************************************"<<endl;
+
     int n;
     cout<<"Enter the number to calculate factorial \t";
     cin>>n;
