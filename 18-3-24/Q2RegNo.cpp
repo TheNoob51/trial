@@ -19,7 +19,7 @@ public:
     // Function to print registration numbers
     void printRegNos() {
         cout<<endl;
-        cout << "Registration Numbers:" << endl;
+        cout << "Registration Numbers:-" << endl;
         for (int i = 0; i < 5; ++i) {
             cout << "Registration Number " << i + 1 << ": " << regNos[i] << endl;
         }
