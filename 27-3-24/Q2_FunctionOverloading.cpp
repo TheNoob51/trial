@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // Function to add two integers
 int add(int a, int b) {
@@ -11,16 +12,14 @@ double add(double a, double b) {
 }
 
 int main() {
-    int intResult;
-    double doubleResult;
 
     // Calling the function with integers
-    intResult = add(5, 7);
-    std::cout << "Result of adding integers: " << intResult << std::endl;
+    int intResult = add(5, 7);
+    cout << "Result of adding integers: " << intResult << endl;
 
     // Calling the function with doubles
-    doubleResult = add(3.5, 4.2);
-    std::cout << "Result of adding doubles: " << doubleResult << std::endl;
+    double doubleResult = add(3.5, 4.2);
+    cout << "Result of adding doubles: " << doubleResult << endl;
 
     return 0;
 }

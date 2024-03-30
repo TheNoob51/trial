@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class MyClass {
 private:
     int data;
@@ -13,7 +13,7 @@ public:
 
 // Definition of the friend function
 void displayData(const MyClass &obj) {
-    std::cout << "Data in MyClass: " << obj.data << std::endl;
+    cout << "Data in MyClass: " << obj.data << endl;
 }
 
 int main() {

@@ -10,7 +10,7 @@ public:
   ComplexNumber(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
 
   // Overload the + operator for addition of complex numbers
-  ComplexNumber operator+(const ComplexNumber& other) const {
+  ComplexNumber operator+(const ComplexNumber &other) const {
     return ComplexNumber(real + other.real, imag + other.imag);
   }
 
