@@ -1,37 +1,47 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 // Base class
-class Base {
+class Base
+{
 public:
-    void displayBase() {
+    void displayBase()
+    {
         cout << "Inside Base class" << endl;
     }
 };
 // Derived class 1 - Single Inheritance
-class Derived1 : public Base {
+class Derived1 : public Base
+{
 public:
-    void displayDerived1() {
+    void displayDerived1()
+    {
         cout << "Inside Derived1 class" << endl;
     }
 };
 // Derived class 2 - Single Inheritance
-class Derived2 : public Base {
+class Derived2 : public Base
+{
 public:
-    void displayDerived2() {
+    void displayDerived2()
+    {
         cout << "Inside Derived2 class" << endl;
     }
 };
 // Derived class 3 - Multiple Inheritance
-class Derived3 : public Derived1, public Derived2 {
+class Derived3 : public Derived1, public Derived2
+{
 public:
-    void displayDerived3() {
+    void displayDerived3()
+    {
         cout << "Inside Derived3 class" << endl;
     }
-    void displayBase() {
+    void displayBase()
+    {
         Derived1::displayBase(); // Choose one of the base classes
     }
 };
-int main() {
+int main()
+{
     Derived3 obj;
     // Accessing members of Base class
     obj.displayBase();

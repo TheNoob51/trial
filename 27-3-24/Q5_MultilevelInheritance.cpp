@@ -1,30 +1,34 @@
 #include <iostream>
 using namespace std;
 // Base class
-class Shape {
+class Shape
+{
 public:
-    void draw() {
+    void draw()
+    {
         cout << "Shape drawn" << endl;
     }
 };
-
 // Derived class 1 - Single Inheritance
-class Quadrilateral : public Shape {
+class Quadrilateral : public Shape
+{
 public:
-    void drawQuad() {
+    void drawQuad()
+    {
         cout << "Quadrilateral drawn" << endl;
     }
 };
-
 // Derived class 2 - Multilevel Inheritance
-class Square : public Quadrilateral {
+class Square : public Quadrilateral
+{
 public:
-    void drawSquare() {
+    void drawSquare()
+    {
         cout << "Square is drawn" << endl;
     }
 };
-
-int main() {
+int main()
+{
     Square square;
 
     square.draw();
