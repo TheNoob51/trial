@@ -18,7 +18,7 @@ public:
         b++;
         cout << endl
              << "Incremented value" << endl;
-        cout << a << setw(5) << b;
+        cout << a << "\t" << b;
     }
     void operator-()
     {
@@ -28,7 +28,7 @@ public:
              << "Inverse is:" << endl;
         cout << a << b;
     }
-    over operator*(over ob2)
+    over operator*(over &ob2)
     {
         over t;
         t.a = a * ob2.a;

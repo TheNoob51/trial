@@ -44,8 +44,7 @@ class Hero{
         this->health = health;
         this->level = level;
     }
-
-    // pass bby reference is used since if we use pass by value, 
+    // pass by reference is used since if we use pass by value, 
     // it will be stuck in infinite loop of calling the functions again and again
     Hero(Hero &temp){
         cout<<"\nHello from copy constructor\n";
