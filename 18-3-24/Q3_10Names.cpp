@@ -6,6 +6,7 @@ class Student {
 private:
     string NameArray[10];
 
+
 public:
     // Function to set names
     void setNames() {

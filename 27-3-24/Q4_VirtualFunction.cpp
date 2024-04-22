@@ -15,7 +15,7 @@ class Derived : public Base
 {
 public:
     // Override the display function
-    void display() override
+    void display()
     {
         cout << "Inside Derived class" << endl;
     }

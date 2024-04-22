@@ -5,7 +5,9 @@ private:
     int data;
 
 public:
-    MyClass(int d) : data(d) {}
+    MyClass(int d){
+        data = d;
+    }
 
     // Declaration of the friend function
     friend void displayData(const MyClass &obj);

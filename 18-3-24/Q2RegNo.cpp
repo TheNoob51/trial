@@ -32,3 +32,4 @@ int main() {
     student.printRegNos();
     return 0;
 }
+
