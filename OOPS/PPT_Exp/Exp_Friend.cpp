@@ -8,19 +8,17 @@ private:
     int no;
 
 public:
-    void two();
-    friend void print(one &g);
+    void two()
+    {
+        cout << "\nenter the no";
+        cin >> no;
+        cout << "\nenter the name";
+        cin >> name;
+        cout <<"no. using no friend"<<no << endl
+             <<"name using no friend"<< name;
+    };
+    friend void print(one &a);
 };
-
-
-void one::two()
-{
-    cout << "\nenter the no and name";
-    cin >> no;
-    cin >> name;
-    cout << no << endl << name;
-}
-
 
 void print(one &a)
 {
@@ -28,7 +26,6 @@ void print(one &a)
     cout << a.no << endl;
     cout << a.name;
 }
-
 
 int main()
 {

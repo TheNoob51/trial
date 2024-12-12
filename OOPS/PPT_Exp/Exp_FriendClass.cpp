@@ -1,15 +1,18 @@
 #include <iostream>
 using namespace std;
+
 class first
 {
-    int x;
+    int x;  // private member x
 public:
-    friend second;
     void get()
     {
-        cout << "enter a number \n";
+        cout << "Enter a number: ";
         cin >> x;
     }
+
+    // Declare second as a friend of first
+    friend class second;
 };
 
 class second
@@ -17,7 +20,8 @@ class second
 public:
     void print(first t)
     {
-        cout << "the number is " << t.x;
+        // Access private member x of first through the friend function
+        cout << "The number is " << t.x << endl;
     }
 };
 
@@ -25,7 +29,9 @@ int main()
 {
     first f;
     second s;
-    f.get();
-    s.print(f);
+
+    f.get();   // Input a number into f
+    s.print(f); // Print the number using s
+
     return 0;
 }
